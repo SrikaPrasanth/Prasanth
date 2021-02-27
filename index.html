@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="static/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="static/css/style.css">
+<link rel="stylesheet" type="text/css" href="static/css/responsive.css">
+
+<!-- ChatBot -->
+<link rel="stylesheet" type="text/css" href="static/css/jquery.convform.css">
+<script type="text/javascript" src="static/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="static/js/jquery.convform.js"></script>
+<script type="text/javascript" src="static/js/custom.js"></script>
+
+</head>
+<body>
+<!-- ChatBot -->
+<div class="chat_icon">
+	<i class="fa fa-comments-o" aria-hidden="true"></i>
+</div>
+
+<div class="chat_box">
+	<div class="my-conv-form-wrapper">
+		<form action="" method="GET" class="hidden">
+
+      <select data-conv-question="Hello {{username}}! How can I help you" name="category">
+        <option value="WebDevelopment">Monitoring related ?</option>
+        <option value="DigitalMarketing">General query ?</option>
+      </select>
+
+      <div data-conv-fork="category">
+        <div data-conv-case="WebDevelopment">
+          <input type="text" name="domainName" data-conv-question="Please, choose below options or type"> 
+		  <select data-conv-question="Is the below mentioned is your need?" name="category">
+			<option value="whiteboard">want to update whiteboard ?</option>
+			<option value="roster">want to update roster ?</option>
+		  </select>
+        </div>
+		
+        <div data-conv-case="DigitalMarketing" data-conv-fork="first-question2">
+          <input type="text" name="companyName" data-conv-question="Please, enter your company name"> 
+        </div>
+      </div>
+
+      <input type="text" name="name" data-conv-question="Please, Enter your name">
+
+      <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
+
+      <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
+
+      <select data-conv-question="Please Conform">
+        <option value="Yes">Conform</option>
+      </select>
+
+  	</form>
+	</div>
+</div>
+<!-- ChatBot end -->
+
+<header class="header">
+	<div class="container-fluid">
+		<div class="row d-flex justify-content-between">
+			<div class="col-md-auto">
+				<a href="#!" class="logo"><img src="static/images/fujitsu.png" height=90em width="170em" alt="logo"></a>
+			</div>
+			<div class="col-md-auto">
+				<nav class="main_nav">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About Us</a></li>
+						<li><a href="#portfolio">Success</a></li>
+						<li><a href="#contact">Contact Us</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>		
+	</div>
+</header>	
+
+<div class="banner d-flex" style="background-image: url('static/images/fuji3.jpg');" id="home">
+	<ul class="socila_links align-items-center">
+		<li><a href="https://www.facebook.com/FujitsuIN/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+		<li><a href="https://www.instagram.com/fujitsu_india/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+		<li><a href="https://twitter.com/fujitsuindia?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+	</ul>	
+	<div class="container">
+		
+		<div class="row top-buffer">
+			<div class="col-md-5">
+				<div class="banner_cont">
+					<h1>Fujitsu Cloud OSS {{username}}</h1>
+					<p> Cloud OSS project consists of several team which are functioning based Fujitsu cloud K5 </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>			
+
+<div class="about-section" id="about">
+	<div class="container-fluid">
+		<h2 class="bdr-btm">Connected – Intelligent – Transformed <br></h2>
+		<div class="row">
+			<div class="col-md-5 text-justify">
+				
+				<p>The latest wave of digital disruption is moving at a blistering pace, presenting 
+					massive opportunity for those who embrace it; and huge risk for those who do not respond.
+                  <br>
+					To survive, compete and thrive today, you need to empower your people with cutting-edge 
+					technologies for innovation, drive new levels of business insight and re-imagine your services 
+					and customer engagements.</p>
+				<a href="#contact" class="btn1">Contact Us</a>	
+			</div>
+			<div class="col-md">
+				<div class="about-box">
+					<h3 class="bdr-btm">Partnership</h3>
+					<p>With our globally recognized partnerships with Amazon Web Services, 
+						Microsoft, Oracle and VMware – it’s no wonder organizations across 
+						the globe are choosing Fujitsu to co-create their Multi-Cloud ecosystem.</p>
+				</div>
+			</div>
+			<div class="col-md">
+				<div class="about-box">
+					<h3 class="bdr-btm">Experience</h3>
+					<p>Our “right cloud for right workload” approach means you can get the innovation, 
+						speed and agility of hyper scale clouds, whilst blending with private and existing 
+						platforms for enhanced performance, security and regulatory compliance.</p>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>
+
+<div class="portfolio-section" id="portfolio">
+	<div id="port_pop_pic_bg"></div>
+	<div id="port_pop_pic"></div>
+	<div class="container-fluid">
+		<h2 class="text-center bdr-btm bdr-btm-center">Customers</h2>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('static/images/11.jpg');">
+					<h3>Lowell</h3>
+				</div>		
+			</div>
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('static/images/22.jpg');">
+					<h3>Intrum</h3>
+				</div>		
+			</div>
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('static/images/33.jpg');">
+					<h3>Robeco</h3>
+				</div>		
+			</div>
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('static/images/44.jpg');">
+					<h3>Akademiska</h3>
+				</div>		
+			</div>
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('static/images/55.jpg');">
+					<h3>HMRC</h3>
+				</div>		
+			</div>
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('static/images/66.jpg');">
+					<h3>AKG</h3>
+				</div>		
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="contact-section d-md-flex" id="contact">
+  <div class="col-md-6 col-12 contact_section_left">
+    <div class="contact_box">
+      <i class="fa fa-phone"></i>
+      <h3>Phone</h3>
+      <p>512-421-3940</p>
+    </div>
+    <div class="contact_box">
+      <i class="fa fa-envelope"></i>
+      <h3>Email</h3>
+      <p>support@yourdomain.com</p>
+    </div>
+    <div class="contact_box">
+      <i class="fa fa-map-marker"></i>
+      <h3>Address</h3>
+      <p>1234 Lorem ipsum dolor</p>
+    </div>
+  </div>
+  <div class="col-md-6 col-12 contact_section_right d-flex align-items-center">
+    <div class="contact_box">
+      <h2 class="bdr-btm">Get In Touch</h2>
+      <form>
+        <div>
+          <input type="text" name="" placeholder="Name">
+          <input type="text" name="" placeholder="Email">
+          <input type="text" name="" placeholder="Subject">
+          <textarea placeholder="Message"></textarea>
+          <input type="submit" class="inline-block" name="" value="Send Message">
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+	portfolioList = document.querySelectorAll('.portfolio-box');
+	portfolioList.forEach(function(portfolioPic) {
+		portfolioPic.addEventListener('click',function(){
+			bg = this.style.backgroundImage;
+			document.getElementById('port_pop_pic_bg').classList.add("active")
+			document.getElementById('port_pop_pic').style.backgroundImage = bg
+			document.getElementById('port_pop_pic').classList.add("active")
+		});	
+	})
+	document.getElementById('port_pop_pic_bg').addEventListener('click',function(){
+			document.getElementById('port_pop_pic_bg').classList.remove("active")
+			document.getElementById('port_pop_pic').classList.remove("active")
+	})
+</script>
+
+</body>
+</html>
